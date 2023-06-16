@@ -51,10 +51,10 @@ Ongoing release- [release-6.0.0](https://github.com/Sunbird-Ed/SunbirdEd-mobile-
 **Onboarding Configurations**
 |Name|Description|Options|
 |----|-----|-----|
-|Language Selection|User should select their prefered language|To skip language selection, set skip as false and provide default values|
+|Language Selection|User should select their preferred language|To skip language selection, set skip as false and provide default values|
 |User Role Selection|User should select their role|If want to skip User Type selection, set skip as false and provide default user type|
-|Profile Settings|User should set their profile by choosing their framework fields|Provide deafult profile values to skip profile settings page|
-|District Maping|Here user need to provide details related to their location|To skip this page deafult location values are required|
+|Profile Settings|User should set their profile by choosing their framework fields|Provide default profile values to skip profile settings page|
+|District Mapping|Here user need to provide details related to their location|To skip this page default location values are required|
 #### Language Selection
 ```
 {
@@ -108,7 +108,7 @@ Ongoing release- [release-6.0.0](https://github.com/Sunbird-Ed/SunbirdEd-mobile-
   ]
 }
 ```
-#### District Maping
+#### District Mapping
 ```
 {
   "onboarding": [
@@ -125,8 +125,8 @@ Ongoing release- [release-6.0.0](https://github.com/Sunbird-Ed/SunbirdEd-mobile-
   ]
 }
 ```
-**Tabs Page COnfigurations**
-Configure the tabs page according to the requirement. Fllowing are the configurable settings for tabs.
+**Tabs Page Configurations**
+Configure the tabs page according to the requirement. Following are the configurable settings for tabs.
 ```
 {
   "tabs": [
@@ -200,16 +200,16 @@ Configure the tabs page according to the requirement. Fllowing are the configura
   Select Sunbird 
   Build setting Project, targets
   update Swift language version to 4 
-  Inside Tagets -> Build phases -> Copy Bundle Resources -> remove duplicate GoogleService-Info.plist if present
+  Inside Targets -> Build phases -> Copy Bundle Resources -> remove duplicate GoogleService-Info.plist if present
   and close Xcode then rerun the **cordova emulate ios**
 2. M1 Chipset users - Turn off ROSETA for XCODE 
-  Open Applications -> Right Click Xcode -> Click on Get Info -> Unchek Open with Roseta
+  Open Applications -> Right Click Xcode -> Click on Get Info -> Uncheck Open with Roseta
   Once `build-ios.sh` is completed, open platforms/ios/Sunbird.xcworkspace and run the application by clicking on Play button
 3. Install Java on Mac
-  Check if JAVA is already insalled or not by running following command in terminal
-  `javac --version` if you get the verdetails then it's installed already
+  Check if JAVA is already installed or not by running following command in terminal
+  `javac --version` if you get the version details then it's installed already
   Check the installation path in `/Library/Java/JavaVirtualMachines`
-  Check is JAVA_HOME is set by runnig `echo $JAVA_HOME`, if you get the installation path as output then JAVA_HOME is set
+  Check is JAVA_HOME is set by running `echo $JAVA_HOME`, if you get the installation path as output then JAVA_HOME is set
   For Further details follow the link - https://stackoverflow.com/a/50683158/4259981
 4. (iOS Setup only) POD installation - https://cocoapods.org/
 5. (Android Setup only) Gradle installation - https://gradle.org/install/
